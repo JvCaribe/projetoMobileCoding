@@ -1,6 +1,6 @@
 # projetoMobileCoding
 
-O projeto deverá ter:
+## O projeto deverá ter:
 - Uma Diretiva Personalizada e duas Estruturais
 
 - Integração com uma API, com um metodo GET
@@ -12,5 +12,5 @@ O projeto deverá ter:
 - Um parâmetro que passe pela rota de uma página anterior para outra página
 
 
-O que será o projeto:
+## O que será o projeto: 
 Um buscador de filmes, com uma página de busca e outra de informações aprofundadas sobre o filme. 
