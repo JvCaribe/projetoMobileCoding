@@ -10,3 +10,7 @@ O projeto deverá ter:
 - Pipes, dois built-in e um personalizado
 
 - Um parâmetro que passe pela rota de uma página anterior para outra página
+
+
+O que será o projeto:
+Um buscador de filmes, com uma página de busca e outra de informações aprofundadas sobre o filme. 
