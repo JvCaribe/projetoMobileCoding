@@ -1,0 +1,7 @@
+{
+  "name": "AV2_filmes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
