@@ -1,20 +1,66 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home
     </ion-title>
+    <div class="red">
+      <ion-label>
+        <a routerLink="/home">Home</a>
+        <a routerLink="/infos" style="color: #ffff00;">Página 2</a>
+      </ion-label>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+  <p><a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">Componentes de
+      UI</a></p>
+
+
+  <div class="barrapesq">
+    <p>
+      <a target="_blank" href="https://ionicframework.com/docs/api/searchbar">Link pros searchbar</a>
+    </p>
+    <ion-searchbar placeholder="Custom Placeholder"></ion-searchbar>
+    <ion-searchbar value="Value"></ion-searchbar>
+    <ion-searchbar animated="True" placeholder="Animated"></ion-searchbar>
   </div>
+
+  <div class="card">
+    <p><a target="_blank" href="https://ionicframework.com/docs/api/card">Link pros cards</a></p>
+
+    <ion-card>
+      <img id="card-image" alt="Project Hail Mary"
+        src="https://images.euronews.com/articles/stories/09/69/16/75/1536x864_cmsv2_e27f2502-45bb-5c3f-9010-f4453dc87ed3-9691675.jpg" />
+
+      <ion-card-header>
+        <ion-card-title>
+          <ion-button fill="clear" routerLink="/testepag2">Project Hail Mary</ion-button>
+        </ion-card-title>
+        <ion-card-subtitle>Ficção Científica</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <!-- Um cientista acorda sozinho em uma espaçonave, sem memória de como chegou lá, e descobre que é a última esperança da humanidade para salvar a Terra de um desastre iminente. -->
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <img alt="Project Hail Mary" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+
+      <ion-card-header>
+        <ion-card-title> <ion-button fill="clear">Card Title</ion-button> </ion-card-title>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        Here's a small text description for the card content. Nothing more, nothing less.
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+
+
 </ion-content>

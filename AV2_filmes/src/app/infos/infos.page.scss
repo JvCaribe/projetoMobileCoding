@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif");
+@import url("https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap");
+
+ion-content {
+    --font-family: Arial;
+    --color: rgb(216, 213, 213);
+    --background: rgb(177, 176, 176);
+    --background-size: cover;
+    --background-position: center;
+    --background-attachment: fixed;
+    --padding: 60px 150px;
+}
+
+// url("https://e1.pxfuel.com/desktop-wallpaper/385/811/desktop-wallpaper-artstation-stranger-things-upside-down.jpg")
+
+ion-toolbar {
+    --background: rgba(0, 0, 0, 0.6);
+    --color: #e2dfdf;
+    --border-radius: 0px 0px 12px 12px;
+    --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.meio {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.6);
+    gap: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    max-width: 950px;
+    padding: 30px;
+    backdrop-filter: blur(2px);
+    margin: 0 auto;
+    margin-top: 40px;
+
+    .poster {
+        flex: 0 250px;
+
+        img {
+            width: 250px;
+            height: 442px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+    }
+
+    .detalhes {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+            color: #a70909;
+            margin-bottom: 10px;
+        }
+
+        .infos {
+            color: #bbb9b9;
+            font-size: 1em;
+            margin-bottom: 20px;
+
+            span {
+                margin-right: 15px;
+            }
+        }
+
+        .sinopse {
+            font-size: 1.1em;
+            line-height: 1.6em;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 8px;
+            color: #e2dfdf;
+        }
+
+        .informacoes {
+            padding-bottom: 5px;
+            font-size: 15px;
+        }
+
+        .diretor {
+            color: #bbb9b9;
+            font-size: 15px;
+            margin-bottom: 5px;
+            padding: 10px 0;
+        }
+    }
+}
+
+/* 
+.linkImdb {
+  background-color: #8b0808;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #4b0f0f;
+  }
+}
+*/
+
+#metascore {
+    width: 31px;
+    height: 31px;
+    vertical-align: middle;
+}
+
+#imdb {
+    width: 28px;
+    height: 22px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+#rottentomatoes {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+#textoavaliacao {
+    font-size: 1em;
+    margin-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 3px;
+}
+
+.avaliacaoimdb,
+.avaliacaotomatoes {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+    gap: 8px;
+}
+
+#disponivel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
