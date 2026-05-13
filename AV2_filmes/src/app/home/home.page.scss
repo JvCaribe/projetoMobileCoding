@@ -27,33 +27,62 @@
 }
 
 .card {
-  width: 300px;
-  margin: 10px auto;
-  display: inline-block;
-  position: relative;
-  padding: 12px 18px;
-  border-radius: 14px;
-
+  // width: 300px;
+  // margin: 10px auto;
+  // display: inline-block;
+  // position: relative;
+  // padding: 12px 18px;
+  // border-radius: 14px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 10px;
 }
 
 ion-card {
-  width: 350px;
-  margin: 10px auto;
-  position: relative;
-  display: inline-block;
+  // width: 350px;
+  // margin: 10px auto;
+  // position: relative;
+  // display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  padding: 10px;
+  text-align: center;
 }
 
 #card-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+//   // width: 100%;
+//   // height: auto;
+//   // border-radius: 8px;
+  width: 300px;
+  height: 444px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+// 100% e 80% de w/h ficou legal.
+// tamanho original dos posters: 600x889
+// 1/2 do tamanho original: 300x444
+// 1/3 do tamanho original: 200x296
+// 1/4 do tamanho original: 150x222
+// 1/5 do tamanho original: 120x178
+
+ion-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 ion-card-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding-top: 0px;
-  margin-left: 0px;
+  // font-size: 1.5em;
+  // font-weight: bold;
+  // padding-top: 0px;
+  // margin-left: 0px;
+font-size: 18px;
+margin-bottom: 5px;
 }
 
 hr {
