@@ -21,6 +21,22 @@ ion-toolbar {
     --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
 }
 
+.cabecalho {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#labelred {
+    text-decoration: none;
+    padding: 10px;
+    color: #cacaca;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 .meio {
     display: flex;
     flex-direction: row;

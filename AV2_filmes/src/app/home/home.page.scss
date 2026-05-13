@@ -55,3 +55,45 @@ ion-card-title {
   padding-top: 0px;
   margin-left: 0px;
 }
+
+hr {
+  color: #fcfbfb;
+  border: 1px solid #fcfbfb;
+}
+
+.cabecalho {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#labelred {
+  text-decoration: none;
+  padding: 10px;
+  color: #a70909;
+  font-size: 1.2em;
+  font-weight: bold;
+  
+}
+
+a{
+  text-decoration: none;
+  color: #0bc9e2;
+}
+
+
+// ajeitar o icon pra nao empurrar o texto pra baixo, e centralizar ele com o texto
+ion-icon {
+  position: relative;
+  top: 8px;
+  font-size: 32px;
+  color: #a70909;
+  margin-top:1px;
+  display:inline-block;
+  // align-items: center;
+  // justify-content: center;
+  // align-items: center;
+  // text-decoration: none;
+}
