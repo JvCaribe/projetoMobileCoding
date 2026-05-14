@@ -2,7 +2,7 @@
   <ion-toolbar>
     <div class="cabecalho">
       <ion-title>
-        Home
+        Buscador de Filmes
       </ion-title>
 
       <ion-label>
@@ -22,7 +22,7 @@
 
 
 
-  <div class="container">
+  <!-- <div class="container">
     <h4>Sim tá bem bagunçadinho, mas são exemplos práticos dos componentes que iremos usar. O resto fica pra galera da
       estilização</h4>
 
@@ -41,24 +41,29 @@
     <p>Pra mudar o fundo tem q ir na tag ion-content, q é a MÃE de todas aqui, tudo tá dentro dela, é a primeira tag, se
       quiser mudar algo pra testar. Apanhei bastante pra descobrir isso</p>
 
-  </div>
-  <p>Clique aqui para ver os <a target="_blank" rel="noopener noreferrer"
-      href="https://ionicframework.com/docs/components">Componentes de
-      UI</a> que podem ser usados</p>
+  </div> -->
 
-  <hr>
 
-  <div class="barrapesq">
+
+
+
+
+  <!-- <div class="pesquisa">
     <p>
       <a target="_blank" href="https://ionicframework.com/docs/api/searchbar">Link pros searchbar</a>
     </p>
+    <br>
     <ion-searchbar animated="True" placeholder="Digite o nome do filme..."></ion-searchbar>
+    <button onclick="buscarFilme()">Buscar</button>
+  </div> -->
+  <br>
+  <div class="pesquisa">
+    <input type="text" id="titulo" placeholder="Digite o nome do filme" />
     <button onclick="buscarFilme()">Buscar</button>
   </div>
 
-  <hr>
 
-  <p><a target="_blank" href="https://ionicframework.com/docs/api/card">Link pros cards</a></p>
+
 
 
   <div class="card">
@@ -75,11 +80,12 @@
       </ion-card-header>
 
       <ion-card-content>
-        Um cientista acorda sozinho em uma espaçonave, sem memória de como chegou lá, e descobre que é a última esperança da humanidade para salvar a Terra de um desastre iminente.
+        Um cientista acorda sozinho em uma espaçonave, sem memória de como chegou lá, e descobre que é a última
+        esperança da humanidade para salvar a Terra de um desastre iminente.
       </ion-card-content>
     </ion-card>
 
- <ion-card>
+    <ion-card>
       <img id="card-image" alt="Batman"
         src="https://m.media-amazon.com/images/M/MV5BMmU5NGJlMzAtMGNmOC00YjJjLTgyMzUtNjAyYmE4Njg5YWMyXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg" />
 
@@ -92,7 +98,7 @@
         <!-- Bruce Wayne, um bilionário traumatizado pela morte de seus pais, assume a identidade de Batman para combater o crime em Gotham City. -->
       </ion-card-content>
     </ion-card>
-    
+
     <ion-card>
       <img id="card-image" alt="dados.Poster" src="https://ionicframework.com/docs/img/demos/card-media.png" />
 
@@ -101,9 +107,11 @@
         <ion-card-subtitle>dados.Genre</ion-card-subtitle>
       </ion-card-header>
 
-      <ion-card-content> 
-        Ano: 
+      <ion-card-content>
+        Ano:
         <a>dados.Year</a>
+        <br>
+        lembrando que o dados.title tem que puxar pra página 2, o que tá em amarelo na barra não irá existir, o redirecionamento vai vim de clicar no título do card.
       </ion-card-content>
     </ion-card>
 
@@ -120,10 +128,15 @@
       </ion-card-content>
     </ion-card>
 
-   
+
 
   </div>
 
 
+  <p>Clique aqui para ver os <a target="_blank" rel="noopener noreferrer"
+      href="https://ionicframework.com/docs/components">Componentes de
+      UI</a> que podem ser usados</p>
+  <hr>
+  <p><a target="_blank" href="https://ionicframework.com/docs/api/card">Link pros cards</a></p>
 
 </ion-content>
