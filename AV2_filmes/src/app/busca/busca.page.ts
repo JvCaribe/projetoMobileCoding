@@ -6,13 +6,18 @@ import { RouterLink } from '@angular/router';
 import { addIcons } from 'ionicons';
 import { logoIonic } from 'ionicons/icons';
 
-
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItemDivider, IonLabel, RouterLink, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonCardSubtitle, IonSearchbar, IonButton, IonIcon],
+  selector: 'app-busca',
+  templateUrl: './busca.page.html',
+  styleUrls: ['./busca.page.scss'],
+  standalone: true,
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItemDivider, IonLabel, RouterLink, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonCardSubtitle, IonSearchbar, IonButton, IonIcon]
 })
-export class HomePage {
+export class BuscaPage implements OnInit {
+
   constructor() { }
+
+  ngOnInit() {
+  }
+
 }
