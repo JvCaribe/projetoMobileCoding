@@ -1,0 +1,165 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.pesquisa {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .pesquisa input {
+        width: 400px;
+        height: 50px;
+        padding: 10px;
+        border-radius: 8px 0 0 8px;
+        border: none;
+        font-size: 15px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    }
+    .pesquisa button {
+        padding: 10px 20px;
+        border-radius: 0 8px 8px 0;
+        border: none;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);  
+        /* background-color: #576ff8; */
+        background-color: rgb(75, 74, 73);
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .pesquisa button:hover {
+        background-color:white;
+        color: rgb(75, 74, 73);
+    }
+
+
+
+.card {
+  // width: 300px;
+  // margin: 10px auto;
+  // display: inline-block;
+  // position: relative;
+  // padding: 12px 18px;
+  // border-radius: 14px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+ion-card {
+  // width: 350px;
+  // margin: 10px auto;
+  // position: relative;
+  // display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  padding: 10px;
+  text-align: center;
+}
+
+#card-image {
+//   // width: 100%;
+//   // height: auto;
+//   // border-radius: 8px;
+  width: 300px;
+  height: 444px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+// 100% e 80% de w/h ficou legal.
+// tamanho original dos posters: 600x889
+// 1/2 do tamanho original: 300x444
+// 1/3 do tamanho original: 200x296
+// 1/4 do tamanho original: 150x222
+// 1/5 do tamanho original: 120x178
+
+ion-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+ion-card-title {
+  // font-size: 1.5em;
+  // font-weight: bold;
+  // padding-top: 0px;
+  // margin-left: 0px;
+font-size: 18px;
+margin-bottom: 5px;
+}
+
+ion-card-subtitle {
+  font-size: 16px;
+  color: #c6c5c5;
+}
+
+hr {
+  color: #fcfbfb;
+  border: 1px solid #fcfbfb;
+}
+
+.cabecalho {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+#labelred {
+  text-decoration: none;
+  padding: 10px;
+  color: #a70909;
+  font-size: 1.2em;
+  font-weight: bold;
+  
+}
+
+a{
+  text-decoration: none;
+  color: #0bc9e2;
+}
+
+
+// ajeitar o icon pra nao empurrar o texto pra baixo, e centralizar ele com o texto
+ion-icon {
+  position: relative;
+  top: 8px;
+  font-size: 32px;
+  color: #a70909;
+  margin-top:1px;
+  display:inline-block;
+  // align-items: center;
+  // justify-content: center;
+  // align-items: center;
+  // text-decoration: none;
+}
