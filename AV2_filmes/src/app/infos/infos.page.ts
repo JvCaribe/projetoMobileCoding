@@ -20,12 +20,6 @@ export class InfosPage implements OnInit {
 
   ) { }
 
-
-  ngOnInit() {
-
-
-  }
-
   tituloPagina: string = '';
   poster: string = '';
   title: string = '';
@@ -42,6 +36,34 @@ export class InfosPage implements OnInit {
   duracao: string = '';
   linkImdb: string = '';
   plot: string = '';
+
+  ngOnInit() {
+  this.route.params.subscribe(params => {
+
+    const id = params['id'];
+
+    console.log('ID RECEBIDO:', id);
+
+    if (id) {
+      this.carregarFilme(id);
+    }
+
+  });
+
+  }
+
+  carregarFilme(id: string) {
+    this.filmesService.getFilmesById(id)
+      .subscribe({
+        next: (dados) => {
+          console.log(dados);
+          this.carregarDados(dados);
+        },
+        error: (erro) => console.log(erro)
+      });
+  }
+
+
 
   carregarDados(dados: any) {
     this.tituloPagina = dados.Title;
