@@ -11,7 +11,7 @@ export class FilmesService {
   constructor(private http: HttpClient) { }
 
   getFilmes(busca: string) {
-    return this.http.get(`${environment.urlApi}?apikey=${environment.apiKey}&s=${busca}&type=movie`);
+    return this.http.get(`${environment.urlApi}?apikey=${environment.apiKey}&s=${busca}`);
   }
 
   getFilmesById(id: string) {

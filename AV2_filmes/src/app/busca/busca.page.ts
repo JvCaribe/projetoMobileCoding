@@ -19,7 +19,7 @@ import { logoIonic } from 'ionicons/icons';
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItemDivider, IonLabel, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonCardSubtitle, IonSearchbar, IonButton, IonIcon, RouterLink, IonSpinner],
 })
 export class BuscaPage implements OnInit {
-
+// SABER SE POSSO CRIAR O PRIVATE COM O NOME Q EU QUISER???
   constructor(private filmesService: FilmesService) { }
 
   filmes: any[] = [];
@@ -48,6 +48,17 @@ export class BuscaPage implements OnInit {
         }
       });
 
+  }
+
+  getTipo(tipo: string): string {
+    switch (tipo) {
+      case 'movie':
+        return 'Filme';
+      case 'series':
+        return 'Série';
+      default:
+        return tipo;
+    }
   }
 
 }
