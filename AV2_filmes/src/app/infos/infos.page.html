@@ -16,105 +16,11 @@
 
 <ion-content [fullscreen]="true">
 
-  <!-- <input
-  type="text"
-  placeholder="Digite o nome do filme"
-  onclick="buscarFilme()"
-  onkeyup="buscarFilme()">
-<button (click)="buscarFilme()">Buscar</button>
-  @if (filme) {
-    <div class="card">
-        <ion-card>
-          <img id="card-image" alt="{{filme.Title}}" src="{{filme.Poster}}" />
-          <ion-card-header>
-            <ion-card-title>
-              <ion-button fill="clear" routerLink="/infos">{{filme.Title}}</ion-button>
-            </ion-card-title>
-            <ion-card-subtitle>{{filme.Genre}}</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            Ano: {{filme.Year}}
-          </ion-card-content>
-        </ion-card> 
-      </div>
-      }
-  @else {
-    <div class="card">
-        <ion-card>
-          <img id="card-image" alt="" src=""/>
-          <ion-card-header>
-            
-            <ion-card-title>
-              <ion-button fill="clear" routerLink="/infos">Título</ion-button>
-            </ion-card-title>
-            <ion-card-subtitle>Nenhum filme encontrado. Tente novamente.</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            Ano
-          </ion-card-content>
-          <ion-spinner name="crescent" color="primary"></ion-spinner>
-        </ion-card> 
-      </div>
-  } -->
   <div class="pesquisa">
-  <input type="text" placeholder="Digite o nome do filme" [(ngModel)]="nomeFilme" (keyup)="buscarFilme()" />
-   <button (click)="buscarFilme()"> Buscar </button>
+    <input type="text" id="titulo" placeholder="Digite o nome do filme" />
+    <button onclick="buscarFilme()">Buscar</button>
   </div>
 
-  @if (filmes.length > 0) {
-
-  <div class="card-filmes">
-
-    @for (filme of filmes; track filme.imdbID) {
-
-    <div class="card">
-      <ion-card>
-        <img id="card-image" [alt]="filme.Title" [src]="filme.Poster" />
-        <ion-card-header>
-
-          <ion-card-title>
-            <ion-button fill="clear" [routerLink]="['/infos', filme.imdbID]">
-              {{ filme.Title }}
-            </ion-button>
-          </ion-card-title>
-
-          <ion-card-subtitle> {{ filme.Type }} </ion-card-subtitle>
-
-        </ion-card-header>
-
-        <ion-card-content> Ano: {{ filme.Year }} </ion-card-content>
-
-      </ion-card>
-    </div>
-    }
-  </div>
-  } @else {
-
-  <div class="card">
-
-    <ion-card>
-
-      <ion-card-header>
-
-        <ion-card-title>
-          Nenhum filme encontrado
-        </ion-card-title>
-
-        <ion-card-subtitle>
-          Tente pesquisar outro nome.
-        </ion-card-subtitle>
-
-      </ion-card-header>
-
-    </ion-card>
-
-  </div>
-
-  }
-
-
-
-    
   <div class="meio">
 
         <div>
