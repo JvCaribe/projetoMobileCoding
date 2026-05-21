@@ -1,28 +1,3 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonItemDivider, IonLabel, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonSearchbar, IonButton, IonIcon } from '@ionic/angular/standalone';
-import { RouterLink } from '@angular/router';
-import { addIcons } from 'ionicons';
-import { logoIonic } from 'ionicons/icons';
-
-@Component({
-  selector: 'app-busca',
-  templateUrl: './busca.page.html',
-  styleUrls: ['./busca.page.scss'],
-  standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItemDivider, IonLabel, RouterLink, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonCardSubtitle, IonSearchbar, IonButton, IonIcon]
-})
-export class BuscaPage implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -33,14 +8,17 @@ import { environment } from '../../environments/environment';
 import { IonIcon } from '@ionic/angular/standalone';
 import { RouterLink } from '@angular/router';
 import { IonSpinner } from '@ionic/angular/standalone';
+import { addIcons } from 'ionicons';
+import { logoIonic } from 'ionicons/icons';
+
 @Component({
-  selector: 'app-infos',
-  templateUrl: './infos.page.html',
-  styleUrls: ['./infos.page.scss'],
+  selector: 'app-busca',
+  templateUrl: './busca.page.html',
+  styleUrls: ['./busca.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItemDivider, IonLabel, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonCardSubtitle, IonSearchbar, IonButton, IonIcon, RouterLink, IonSpinner],
 })
-export class InfosPage implements OnInit {
+export class BuscaPage implements OnInit {
 
   constructor(private filmesService: FilmesService) { }
 
