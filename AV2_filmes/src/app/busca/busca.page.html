@@ -20,57 +20,14 @@
 
 <ion-content [fullscreen]="true">
 
-
-  <!-- <input
-  type="text"
-  placeholder="Digite o nome do filme"
-  onclick="buscarFilme()"
-  onkeyup="buscarFilme()">
-<button (click)="buscarFilme()">Buscar</button>
-  @if (filme) {
-    <div class="card">
-        <ion-card>
-          <img id="card-image" alt="{{filme.Title}}" src="{{filme.Poster}}" />
-          <ion-card-header>
-            <ion-card-title>
-              <ion-button fill="clear" routerLink="/infos">{{filme.Title}}</ion-button>
-            </ion-card-title>
-            <ion-card-subtitle>{{filme.Genre}}</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            Ano: {{filme.Year}}
-          </ion-card-content>
-        </ion-card> 
-      </div>
-      }
-  @else {
-    <div class="card">
-        <ion-card>
-          <img id="card-image" alt="" src=""/>
-          <ion-card-header>
-            
-            <ion-card-title>
-              <ion-button fill="clear" routerLink="/infos">Título</ion-button>
-            </ion-card-title>
-            <ion-card-subtitle>Nenhum filme encontrado. Tente novamente.</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            Ano
-          </ion-card-content>
-          <ion-spinner name="crescent" color="primary"></ion-spinner>
-        </ion-card> 
-      </div>
-  } -->
   <div class="pesquisa">
   <input type="text" placeholder="Digite o nome do filme" [(ngModel)]="nomeFilme" (keyup)="buscarFilme()" />
    <button (click)="buscarFilme()"> Buscar </button>
   </div>
 
-  @if (filmes.length > 0) {
-
+  @if(filmes.length > 0) {
   <div class="card-filmes">
-
-    @for (filme of filmes; track filme.imdbID) {
+    @for(filme of filmes; track filme.imdbID) {
 
     <div class="card">
       <ion-card>
@@ -96,46 +53,36 @@
   } @else {
 
   <div class="card">
-
     <ion-card>
 
       <ion-card-header>
-
-        <ion-card-title>
-          Nenhum filme encontrado
-        </ion-card-title>
-
-        <ion-card-subtitle>
-          Tente pesquisar outro nome.
-        </ion-card-subtitle>
-
+        <ion-card-title>Nenhum filme encontrado</ion-card-title>
+        <ion-card-subtitle>Tente pesquisar outro nome.</ion-card-subtitle>
       </ion-card-header>
 
     </ion-card>
-
   </div>
-
   }
 
 
 
-
+<!-- 
   <br>
   <div class="pesquisa">
     <input type="text" id="titulo" placeholder="Digite o nome do filme" />
     <button onclick="buscarFilme()">Buscar</button>
-  </div>
+  </div> -->
 
 
 
 
 
-  <div class="card">
+  <!-- <div class="card">
 
     <ion-card>
       <img id="card-image" alt="Project Hail Mary"
         src="https://www.movieposters.com/cdn/shop/files/project-hail-mary_m85ivk80_72e847b5-d079-4e97-8bae-250fd1b7f451_1024x1024.jpg?v=1771941117" />
-      <!-- src="https://images.euronews.com/articles/stories/09/69/16/75/1536x864_cmsv2_e27f2502-45bb-5c3f-9010-f4453dc87ed3-9691675.jpg"  -->
+  
       <ion-card-header>
         <ion-card-title>
           <ion-button fill="clear" routerLink="/infos">Project Hail Mary</ion-button>
@@ -192,7 +139,7 @@
 
 
 
-  </div>
+  </div> -->
 
   <hr>
   <div class="container">
