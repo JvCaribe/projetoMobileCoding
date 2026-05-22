@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar, IonItemDivider, IonLabel, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonSearchbar, IonButton, IonSkeletonText } from '@ionic/angular/standalone';
 import { FilmesService } from '../services/filmes.service';
@@ -19,14 +19,15 @@ import { logoIonic } from 'ionicons/icons';
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItemDivider, IonLabel, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonCardSubtitle, IonSearchbar, IonButton, IonIcon, RouterLink, IonSpinner, IonSkeletonText],
 })
 export class BuscaPage implements OnInit {
-// SABER SE POSSO CRIAR O PRIVATE COM O NOME Q EU QUISER???
+  // SABER SE POSSO CRIAR O PRIVATE COM O NOME Q EU QUISER???
   constructor(private filmesService: FilmesService) { }
 
   filmes: any[] = [];
   nomeFilme: string = '';
 
   ngOnInit(): void {
-    this.buscarFilme();}
+    this.buscarFilme();
+  }
 
   buscarFilme() {
 

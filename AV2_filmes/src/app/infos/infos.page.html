@@ -64,7 +64,7 @@
 
             <p class="sinopse">
                 {{ plot }}
-            </p>           
+            </p>
 
             <div class="diretor">
                 <p>
@@ -95,4 +95,8 @@
         </div>
 
     </div>
-</ion-content> 
+<div class="meio">
+    <p>Data da busca: {{ dataReq | date: 'dd/MM/yyyy'}}, às {{ dataReq | date: 'HH:mm' }}.</p> 
+</div>
+
+</ion-content>

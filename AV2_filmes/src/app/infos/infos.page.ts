@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar, IonItemDivider, IonLabel, IonIcon } from '@ionic/angular/standalone';
 import { ActivatedRoute, RouterLink } from '@angular/router';
@@ -10,7 +10,7 @@ import { FilmesService } from '../services/filmes.service';
   templateUrl: './infos.page.html',
   styleUrls: ['./infos.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItemDivider, IonLabel, RouterLink, IonIcon]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItemDivider, IonLabel, RouterLink, IonIcon, DatePipe]
 })
 export class InfosPage implements OnInit {
 
@@ -63,8 +63,6 @@ export class InfosPage implements OnInit {
       });
   }
 
-
-
   carregarDados(dados: any) {
     this.tituloPagina = dados.Title;
     this.poster = dados.Poster;
@@ -94,5 +92,8 @@ export class InfosPage implements OnInit {
     this.linkImdb = `https://www.imdb.com/title/${dados.imdbID}/`;
     this.plot = dados.Plot || 'N/A';
   }
+
+
+  dataReq: Date = new Date();
 
 }
