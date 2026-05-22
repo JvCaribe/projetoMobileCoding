@@ -8,7 +8,7 @@
       <ion-label>
         <a routerLink="/home" id="labelred">Home</a>
         <a routerLink="/busca" id="labelred">Busca</a>
-        <a routerLink="/infos" id="labelred" style="color: #ffff00;">Página 2</a>
+        <!-- <a routerLink="/infos" id="labelred" style="color: #ffff00;">Página 2</a> -->
         <a href="https://github.com/JvCaribe/projetoMobileCoding" target="_blank" id="labelred">
           GitHub
           <ion-icon src="assets/icon/logo-github.svg" aria-label="Repositório no Github"></ion-icon>
@@ -21,8 +21,8 @@
 <ion-content [fullscreen]="true">
 
   <div class="pesquisa">
-  <input type="text" placeholder="Digite o nome do filme" [(ngModel)]="nomeFilme" (keyup)="buscarFilme()" />
-   <button (click)="buscarFilme()"> Buscar </button>
+    <input type="text" placeholder="Digite o nome do filme" [(ngModel)]="nomeFilme" (keyup)="buscarFilme()" />
+    <button (click)="buscarFilme()"> Buscar </button>
   </div>
 
   @if(filmes.length > 0) {
@@ -66,7 +66,7 @@
 
 
 
-<!-- 
+  <!-- 
   <br>
   <div class="pesquisa">
     <input type="text" id="titulo" placeholder="Digite o nome do filme" />

@@ -19,6 +19,9 @@ ion-toolbar {
     --color: #e2dfdf;
     --border-radius: 0px 0px 12px 12px;
     --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    height: 60px;
+    justify-content: center;
+    align-items: center;
 }
 
 .cabecalho {
@@ -36,157 +39,178 @@ ion-toolbar {
     font-size: 1.2em;
     font-weight: bold;
 }
+
 .meio {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        background-color: rgba(0, 0, 0, 0.6);
-        gap: 30px;
-        border-radius: 12px;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-        max-width: 950px;
-        padding: 30px;
-        backdrop-filter: blur(2px);
-        margin: 0 auto;
-        margin-top: 40px;
-    }
 
-    .poster {
-        flex: 0 250px;
-    }
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.6);
+    gap: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    max-width: 1200px;
+    padding: 30px;
+    backdrop-filter: blur(2px);
+    margin: 0 auto;
+    margin-top: 70px;
+}
 
-    .poster img {
-        width: 250px;
-        height: 442px;
-        border-radius: 8px;
-        object-fit: cover;
-    }
+.poster {
+    flex: 0 250px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 8px;
+}
 
-    .detalhes {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
+.poster {
+    width: 380px;
+    height: 562px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.45s ease-in-out;
+}
 
-    .title {
-        font-size: 2em;
-        font-weight: bold;
-        color: #576ff8;
-        margin-bottom: 10px;
-    }
+.poster:hover {
+    transform: scale(1.12);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    filter: brightness(1.1);
+}
 
-    .infos {
-        color: #bbb9b9;
-        font-size: 1em;
-        margin-bottom: 20px;
-    }
+.detalhes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
-    .infos span {
-        margin-right: 15px;
-    }
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #cfd8dc;
+    margin-bottom: 12px;
+    margin-top: 5px;
+}
 
-    .sinopse,
-    .diretor {
-        font-size: 1.1em;
-        line-height: 1.6em;
-        background-color: rgba(255, 255, 255, 0.05);
-        padding: 15px;
-        border-radius: 8px;
-        color: #e2dfdf;
-    }
+.infos {
+    color: #bbb9b9;
+    font-size: 16px;
+    margin-bottom: 18px;
+    margin-top: 5px;
+}
 
-    .premios {
-        font-size: 15px;
-        line-height: 1.6em;
-        background-color: rgba(255, 255, 166, 0.36);
-        padding: 10px 10px;
-        border-radius: 8px;
-        margin-bottom: 5px;
-    }
+.infos span {
+    margin-right: 15px;
+}
 
-    .informacoes {
-        padding-bottom: 5px;
-        font-size: 15px;
-    }
+.sinopse,
+.diretor {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    color: #e2dfdf;
+}
 
-    .diretor {
-        color: #bbb9b9;
-        font-size: 15px;
-        margin-bottom: 5px;
-        padding: 10px 10px;
-    }
+.premios {
+    font-size: 17px;
+    line-height: 1.6em;
+    background-color: rgba(255, 255, 166, 0.36);
+    padding: 10px 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
 
-    #linkImdb {
-        background-color: rgb(245, 197, 24);
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-        font-size: 13px;
-        padding: 10px 15px;
-        border-radius: 60px;
-        display: inline-block;
-        text-decoration: none;
-        align-self: center;
-        align-items: center;
-        margin-left: 10px;
-    }
+.informacoes {
+    padding-bottom: 5px;
+    font-size: 15px;
+}
 
-    #linkImdb:hover {
-        background-color: #000000;
-        color: rgb(245, 197, 24);
-    }
+.diretor {
+    color: #bbb9b9;
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding: 10px 10px;
+}
 
-    #metascore {
-        width: 31px;
-        height: 31px;
-        vertical-align: middle;
-        padding-right: 5px;
-    }
+#linkImdb {
+    background-color: rgb(245, 197, 24);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px 15px;
+    border-radius: 60px;
+    display: inline-block;
+    text-decoration: none;
+    align-self: center;
+    align-items: center;
+    margin-left: 10px;
+}
 
-    #oscar {
-        width: 28px;
-        height: 28px;
-        vertical-align: middle;
-        padding-right: 1px;
-    }
+#linkImdb:hover {
+    background-color: #000000;
+    color: rgb(245, 197, 24);
+    transition: transform 0.3s ease-out, background-color 0.2s ease-out, color 0.3s ease-out;
+}
 
-    #imdb {
-        width: 28px;
-        height: 22px;
-        vertical-align: middle;
-        padding-right: 5px;
-    }
+#metascore {
+    width: 37px;
+    height: 31px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
 
-    #rottentomatoes {
-        width: 28px;
-        height: 28px;
-        vertical-align: middle;
-        padding-right: 5px;
-    }
+#oscar {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    padding-right: 1px;
+    margin-right: 3px;
+}
 
-    #textoavaliacao {
-        font-size: 1em;
-        margin-left: 8px;
-        padding-right: 8px;
-        padding-bottom: 3px;
-    }
+#oscar:hover {
+    transform: scale(1.4);
+    transition: transform 0.4s ease-out;
+}
 
-    .avaliacaoimdb,
-    .avaliacaotomatoes {
-        display: flex;
-        align-items: center;
-        margin-left: 35px;
-        gap: 8px;
-    }
+#imdb {
+    width: 40px;
+    height: 25px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
 
-    #disponivel {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 1.1em;
-        margin-bottom: 20px;
-    }
+#rottentomatoes {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
 
-    a {
-        text-decoration: none;
-    }
+#textoavaliacao {
+    font-size: 1em;
+    margin-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 3px;
+}
+
+.avaliacaoimdb,
+.avaliacaotomatoes {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+    gap: 8px;
+}
+
+#disponivel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}

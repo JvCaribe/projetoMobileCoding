@@ -24,6 +24,16 @@
   text-decoration: none;
 }
 
+ion-toolbar {
+    --background: #464646;
+    --color: #e2dfdf;
+    --border-radius: 0px 0px 12px 12px;
+    --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
 hr {
   color: #fcfbfb;
   border: 1px solid #fcfbfb;
@@ -40,10 +50,9 @@ hr {
 #labelred {
   text-decoration: none;
   padding: 10px;
-  color: #a70909;
+  color: #cacaca;
   font-size: 1.2em;
   font-weight: bold;
-  
 }
 
 a{
@@ -57,11 +66,8 @@ ion-icon {
   position: relative;
   top: 8px;
   font-size: 32px;
-  color: #a70909;
-  margin-top:1px;
+  color: #cacaca;
   display:inline-block;
-  // align-items: center;
-  // justify-content: center;
-  // align-items: center;
-  // text-decoration: none;
+  align-items: center;
+  justify-content: center;
 }
