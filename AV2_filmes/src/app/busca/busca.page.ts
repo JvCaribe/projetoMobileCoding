@@ -61,4 +61,10 @@ export class BuscaPage implements OnInit {
     }
   }
 
+  getPoster(poster: string): string {
+    if (poster === 'N/A') {
+      return 'assets/icon/notfound.png';
+    }
+    return poster;
+  }
 }

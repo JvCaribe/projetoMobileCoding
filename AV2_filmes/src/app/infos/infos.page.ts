@@ -68,6 +68,9 @@ export class InfosPage implements OnInit {
   carregarDados(dados: any) {
     this.tituloPagina = dados.Title;
     this.poster = dados.Poster;
+    if (this.poster === 'N/A') {
+      this.poster = 'assets/icon/notfound.png';
+    }
     this.title = dados.Title;
     this.genero = dados.Genre || 'N/A';
     this.anoLnc = dados.Year || 'N/A';
