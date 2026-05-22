@@ -41,7 +41,6 @@ ion-toolbar {
 }
 
 .meio {
-
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -53,7 +52,32 @@ ion-toolbar {
     padding: 30px;
     backdrop-filter: blur(2px);
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 40px;
+}
+
+.meio-data {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    gap: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    max-width: 380px;
+    height: 80px;
+    padding: 10px;
+    backdrop-filter: blur(2px);
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.dtBusca {
+    font-size: 18px;
+    color: #cacaca;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .poster {

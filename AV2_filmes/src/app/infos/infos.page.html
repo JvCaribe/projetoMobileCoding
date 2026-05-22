@@ -29,6 +29,10 @@
                 <span>Ano de lançamento: {{ anoLnc }}</span>
                 <span>Tipo: {{ tipo }}</span>
                 <span>Classificação: {{ rated }}</span>
+                <!-- PIPES PERSONALIZADAS
+                TRANSFORMAR CLASSIFICAÇÃO US PARA BR
+                DIRETIVA PERSONALIZADA
+                MUDAR O FUNDO DA CLASSIFICAÇÃO PARA O CORRETO-->
                 <span>Gênero: {{ genero }}</span>
             </div>
 
@@ -38,6 +42,8 @@
                         alt="MetaScore logo">
                     <span id="metascoreRating">{{ metascoreRating }}</span>
                 </span>
+                <!-- DIRETIVA PERSONALIZADA 
+                 MUDAR O FUNDO DA NOTA METASCORE-->
 
                 <span id="textoavaliacao">
                     <img id="rottentomatoes"
@@ -95,8 +101,8 @@
         </div>
 
     </div>
-<div class="meio">
-    <p>Data da busca: {{ dataReq | date: 'dd/MM/yyyy'}}, às {{ dataReq | date: 'HH:mm' }}.</p> 
-</div>
+    <div class="meio-data">
+        <p class="dtBusca">Data da busca: {{ dataReq | date: 'dd/MM/yyyy'}}, às {{ dataReq | date: 'HH:mm' }}.</p>
+    </div>
 
 </ion-content>
