@@ -51,31 +51,135 @@
     }
   </div>
   } @else {
+<div class="card-filmes"> 
 
-  <div class="card">
-    <ion-card>
-
+    <!-- <ion-card>
       <ion-card-header>
+        <ion-spinner name="crescent"></ion-spinner>
+        <ion-card-title>Carregando...</ion-card-title>
         <ion-card-title>Nenhum filme encontrado</ion-card-title>
         <ion-card-subtitle>Tente pesquisar outro nome.</ion-card-subtitle>
       </ion-card-header>
+    </ion-card>  -->
 
+    <ion-card>
+      <div style="padding: 10px;">
+        <ion-skeleton-text animated style="width: 90%; height: 444px; border-radius: 8px;"></ion-skeleton-text>
+      </div>
+
+      <ion-card-header>
+        <ion-card-title>
+          <ion-skeleton-text animated style="width: 120px; height: 24px;">
+          </ion-skeleton-text>
+        </ion-card-title>
+
+        <ion-card-subtitle>
+          <ion-skeleton-text animated style="width: 60px; height: 18px;">
+          </ion-skeleton-text>
+        </ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>
+          <ion-skeleton-text animated style="width: 90%;">
+          </ion-skeleton-text>
+        </p>
+        <p>
+          <ion-skeleton-text animated style="width: 90%;">
+          </ion-skeleton-text>
+        </p>
+      </ion-card-content>
     </ion-card>
+
+    <ion-card>
+      <div style="padding: 10px;">
+        <ion-skeleton-text animated style="width: 90%; height: 444px; border-radius: 8px;"></ion-skeleton-text>
+      </div>
+
+      <ion-card-header>
+        <ion-card-title>
+          <ion-skeleton-text animated style="width: 120px; height: 24px;">
+          </ion-skeleton-text>
+        </ion-card-title>
+
+        <ion-card-subtitle>
+          <ion-skeleton-text animated style="width: 60px; height: 18px;">
+          </ion-skeleton-text>
+        </ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>
+          <ion-skeleton-text animated style="width: 90%;">
+          </ion-skeleton-text>
+        </p>
+        <p>
+          <ion-skeleton-text animated style="width: 90%;">
+          </ion-skeleton-text>
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <div style="padding: 10px;">
+        <ion-skeleton-text animated style="width: 90%; height: 444px; border-radius: 8px;"></ion-skeleton-text>
+      </div>
+
+      <ion-card-header>
+        <ion-card-title>
+          <ion-skeleton-text animated style="width: 120px; height: 24px;">
+          </ion-skeleton-text>
+        </ion-card-title>
+
+        <ion-card-subtitle>
+          <ion-skeleton-text animated style="width: 60px; height: 18px;">
+          </ion-skeleton-text>
+        </ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>
+          <ion-skeleton-text animated style="width: 90%;">
+          </ion-skeleton-text>
+        </p>
+        <p>
+          <ion-skeleton-text animated style="width: 90%;">
+          </ion-skeleton-text>
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <div style="padding: 10px;">
+        <ion-skeleton-text animated style="width: 90%; height: 444px; border-radius: 8px;"></ion-skeleton-text>
+      </div>
+
+      <ion-card-header>
+        <ion-card-title>
+          <ion-skeleton-text animated style="width: 120px; height: 24px;">
+          </ion-skeleton-text>
+        </ion-card-title>
+
+        <ion-card-subtitle>
+          <ion-skeleton-text animated style="width: 60px; height: 18px;">
+          </ion-skeleton-text>
+        </ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>
+          <ion-skeleton-text animated style="width: 90%;">
+          </ion-skeleton-text>
+        </p>
+        <p>
+          <ion-skeleton-text animated style="width: 90%;">
+          </ion-skeleton-text>
+        </p>
+      </ion-card-content>
+    </ion-card>
+
   </div>
   }
-
-
-
-  <!-- 
-  <br>
-  <div class="pesquisa">
-    <input type="text" id="titulo" placeholder="Digite o nome do filme" />
-    <button onclick="buscarFilme()">Buscar</button>
-  </div> -->
-
-
-
-
 
   <!-- <div class="card">
 
@@ -140,50 +244,7 @@
 
 
   </div> -->
-<br><br><br><br>
+  <br>
   <hr>
-  <div class="container">
-    <h4>Observações</h4>
-
-    <p> Basicamente todos os componentes são puxados da API do ionic, então pra chamar eles vc tem q usar a tag
-      específica deles, q é o nome do componente entre chaves <strong>"ion-nomedocomponente"</strong> <br> E depois, o
-      mais <strong>IMPORTANTE</strong>, vc tem que adicionar a mesma tag no arquivo page.ts da página, no caso dessa
-      aqui é o home.page.ts. <br>
-      Aí você coloca no <strong>import do começo da página ts</strong> e depois nos imports do
-      <strong>@Components</strong>
-      <br> Mas creio que não será necessário adicionar mais componentes, a maioria já adicionei só é mais estilização mesmo.
-    </p>
-    <p>Pra mudar o fundo tem q ir na tag ion-content, q é a MÃE de todas aqui, tudo tá dentro dela, é a primeira tag. Apanhei bastante pra descobrir isso</p>
-    <br>
-    <ul> <h2>Tarefas -</h2>
-      <li>
-        <p>Bom mudar esse fundo preto e estilizar bem, pode clicar na página 2 em amarelo que o fundo eu tava com a ideia de ser daquela cor lá. Ele ta no infos.page.scss <br> Tarefa da estilização. </p> 
-      </li>
-      <li>
-        <p>
-          Ajeitar o logo do github lá em cima, ele tá empurrando todas as letras pra baixo na barra, tá feio. Tem que ficar alinhado verticalmente os nomes em vermelho <br> Tarefa da estilização.
-        </p>
-      </li>
-      <li>
-        <p>
-          Ajeitar o card, tem que ficar bonitão, com titulo, genero e ano, tem que puxar os dados da API, o card é o componente mais complexo, tem que ser o mais bonito também. <br> Tarefa do httpclient. Esqueleto tá pronto já.
-        </p>
-      </li>
-      <li>
-        <p> Tirar a barra cinza que sobra embaixo do card, ver se isso nao tem a ver com as coisas que escrevi, mas mesmo sem elas ainda sobra a barra cinza <br> Tarefa da estilização.</p>
-      </li>
-      <li>
-        <p> Ajeitar o redirecionamento pra página 2, tem que ser clicando no título do card, e tem que puxar os dados do filme específico pra lá, ou seja, quando <br> clicar no título do card, tem que puxar os dados daquele filme específico pra página 2. <br> Tarefa do httpclient também.
-        </p>
-      </li>
-      <li>Como dito, <strong>a página 2 escrita em amarelo no menu em cima não irá existir, ela é feita pra gente navegar facilmente pelas páginas do codigo</strong></li>
-    </ul>
-
-    
-    <br>
-  </div>
-  <p>Clique aqui para ver os <a target="_blank" rel="noopener noreferrer"
-      href="https://ionicframework.com/docs/components">Componentes de
-      UI</a> que podem ser usados</p>
 
 </ion-content>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonItemDivider, IonLabel, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonSearchbar, IonButton } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonItemDivider, IonLabel, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonSearchbar, IonButton, IonSkeletonText } from '@ionic/angular/standalone';
 import { FilmesService } from '../services/filmes.service';
 import { OnInit } from '@angular/core';
 import { environment } from '../../environments/environment';
@@ -16,7 +16,7 @@ import { logoIonic } from 'ionicons/icons';
   templateUrl: './busca.page.html',
   styleUrls: ['./busca.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItemDivider, IonLabel, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonCardSubtitle, IonSearchbar, IonButton, IonIcon, RouterLink, IonSpinner],
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItemDivider, IonLabel, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonCardSubtitle, IonSearchbar, IonButton, IonIcon, RouterLink, IonSpinner, IonSkeletonText],
 })
 export class BuscaPage implements OnInit {
 // SABER SE POSSO CRIAR O PRIVATE COM O NOME Q EU QUISER???

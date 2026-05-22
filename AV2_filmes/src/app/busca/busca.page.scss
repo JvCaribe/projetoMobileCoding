@@ -78,16 +78,6 @@ ion-label{
 
 
 .card-filmes {
-  // width: 300px;
-  // margin: 10px auto;
-  // display: inline-block;
-  // position: relative;
-  // padding: 12px 18px;
-  // border-radius: 14px;
-  // display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  // gap: 20px;
-  // padding: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -114,6 +104,20 @@ ion-card {
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 10px;
+}
+
+#imgNf {
+  width: 150px;
+  height: 222px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+ion-skeleton-text {
+ align-items: center;
+ justify-content: center;
+ justify-self: center;
 }
 
 // 100% e 80% de w/h ficou legal.
