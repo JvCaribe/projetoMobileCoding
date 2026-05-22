@@ -81,6 +81,8 @@ export class InfosPage implements OnInit {
     this.rottenRating = dados.Ratings?.[1]?.Value || 'N/A';
     this.imdbRating = dados.imdbRating || 'N/A';
     this.metascoreRating = dados.Metascore || 'N/A';
+    
+
     this.rated = dados.Rated || 'N/A';
     this.direcao = dados.Director || 'N/A';
     this.elenco = dados.Actors || 'N/A';
