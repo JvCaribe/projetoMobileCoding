@@ -5,13 +5,15 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonItemDivider, IonLabel, 
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { FilmesService } from '../services/filmes.service';
 import { ClassificacaoPipe } from '../pipes/classificacao-pipe';
+import { CorNotaDiretiva } from './cor-nota';
+import {CorClassificacaoDiretiva } from './cor-classificacao';
 
 @Component({
   selector: 'app-infos',
   templateUrl: './infos.page.html',
   styleUrls: ['./infos.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItemDivider, IonLabel, RouterLink, IonIcon, DatePipe, ClassificacaoPipe]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItemDivider, IonLabel, RouterLink, IonIcon, DatePipe, ClassificacaoPipe, CorNotaDiretiva, CorClassificacaoDiretiva]
 })
 export class InfosPage implements OnInit {
 

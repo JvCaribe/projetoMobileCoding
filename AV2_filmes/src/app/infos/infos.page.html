@@ -28,7 +28,7 @@
             <div class="infos">
                 <span>Ano de lançamento: {{ anoLnc }}</span>
                 <span>Tipo: {{ tipo }}</span>
-                <span>Classificação: {{ rated | classificacao }}</span>
+                <span>Classificação: <span [appCorClassificacao]="rated">{{ rated | classificacao }}</span> </span>
                 <!-- PIPES PERSONALIZADAS
                 TRANSFORMAR CLASSIFICAÇÃO US PARA BR: Feito
                 DIRETIVA PERSONALIZADA
@@ -40,7 +40,7 @@
                 <span id="textoavaliacao">
                     <img id="metascore" src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Metascore.png"
                         alt="MetaScore logo">
-                    <span id="metascoreRating">{{ metascoreRating }}</span>
+                    <span id="metascoreRating" [appCorNota]="metascoreRating">{{ metascoreRating }}</span>
                 </span>
                 <!-- DIRETIVA PERSONALIZADA 
                  MUDAR O FUNDO DA NOTA METASCORE-->
