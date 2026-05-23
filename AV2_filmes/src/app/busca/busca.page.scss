@@ -27,18 +27,19 @@
 }
 
 ion-toolbar {
-    --background: #464646;
-    --color: #e2dfdf;
-    --border-radius: 0px 0px 12px 12px;
-    --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-    height: 60px;
-    justify-content: center;
-    align-items: center;
+  --background: #464646;
+  --color: #e2dfdf;
+  --border-radius: 0px 0px 12px 12px;
+  --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  height: 60px;
+  justify-content: center;
+  align-items: center;
 }
-ion-label{
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 6px;
+
+ion-label {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6px;
 }
 
 .pesquisa {
@@ -118,9 +119,9 @@ ion-card {
 }
 
 ion-skeleton-text {
- align-items: center;
- justify-content: center;
- justify-self: center;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
 }
 
 // 100% e 80% de w/h ficou legal.
@@ -157,10 +158,6 @@ hr {
   border: 1px solid #fcfbfb;
 }
 
-.img-card{
-  // padding:px;
-}
-
 .cabecalho {
   height: 15px;
   padding: 10px;
@@ -191,7 +188,7 @@ ion-icon {
   top: 8px;
   font-size: 32px;
   color: #cacaca;
-  display:inline-block;
+  display: inline-block;
   align-items: center;
   justify-content: center;
 }
