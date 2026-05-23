@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   urlApi: 'http://www.omdbapi.com/',
-  apiKey: 'd9457dfe',
+  // apiKey: 'd9457dfe',
+  apiKey:'9080f41a',
   useMockApi: false,
   enableHttpLogs: true
 };
