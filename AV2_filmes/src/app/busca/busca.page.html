@@ -20,7 +20,7 @@
 <ion-content [fullscreen]="true">
 
   <div class="pesquisa">
-    <input type="text" placeholder="Digite o nome do filme" [(ngModel)]="nomeFilme" (keyup)="buscarFilme()" />
+    <input type="text" placeholder=" Digite o nome do filme" [(ngModel)]="nomeFilme" (keyup)="buscarFilme()" />
     <button (click)="buscarFilme()"> Buscar </button>
   </div>
 
@@ -30,9 +30,9 @@
 
     <div class="card">
       <ion-card>
-        
+
         <img id="card-image" [alt]="filme.Title" [src]="filme.Poster" />
-     
+
         <ion-card-header>
 
           <ion-card-title>
@@ -52,7 +52,7 @@
     }
   </div>
   } @else {
-<div class="card-filmes"> 
+  <div class="card-filmes">
 
     <ion-card>
       <div style="padding: 10px;">
