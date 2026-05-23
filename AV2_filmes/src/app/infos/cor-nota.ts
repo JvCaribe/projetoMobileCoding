@@ -17,6 +17,8 @@ export class CorNotaDiretiva implements OnChanges {
  
     private aplicarCor() {
         const nota = Number(this.appCorNota);
+
+        if (!this.appCorNota) return;
  
         if (nota <= 19) {
             this.elemento.nativeElement.style.backgroundColor = '#5B21B6';
@@ -37,7 +39,6 @@ export class CorNotaDiretiva implements OnChanges {
         else if (nota >= 90 && nota <= 100) {
             this.elemento.nativeElement.style.backgroundColor = '#1B5E20';
         }
-      this.elemento.nativeElement.style.color = 'white';
 
   this.elemento.nativeElement.style.display = 'inline-flex';
   this.elemento.nativeElement.style.alignItems = 'center';
@@ -48,3 +49,4 @@ export class CorNotaDiretiva implements OnChanges {
   this.elemento.nativeElement.style.borderRadius = '6px';
   }
     }
+  
