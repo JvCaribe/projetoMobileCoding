@@ -44,7 +44,7 @@ this.elemento.nativeElement.style.backgroundColor = cor;
     this.elemento.nativeElement.style.display = 'inline-flex';
     this.elemento.nativeElement.style.alignItems = 'center';
     this.elemento.nativeElement.style.justifyContent = 'center';
-    this.elemento.nativeElement.style.padding = '6px, 6px';
+    this.elemento.nativeElement.style.padding = '4px, 10px';
     this.elemento.nativeElement.style.fontWeight = 'bold';
     this.elemento.nativeElement.style.borderRadius = '6px';
 }
