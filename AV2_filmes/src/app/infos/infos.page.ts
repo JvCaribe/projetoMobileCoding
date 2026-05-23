@@ -13,7 +13,7 @@ import { CorClassificacaoDiretiva } from './cor-classificacao';
   templateUrl: './infos.page.html',
   styleUrls: ['./infos.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItemDivider, IonLabel, RouterLink, IonIcon, DatePipe, ClassificacaoPipe, CorNotaDiretiva, CorClassificacaoDiretiva]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonLabel, RouterLink, DatePipe, ClassificacaoPipe, CorNotaDiretiva, CorClassificacaoDiretiva]
 })
 export class InfosPage implements OnInit {
 

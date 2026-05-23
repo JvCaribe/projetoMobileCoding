@@ -16,7 +16,7 @@ import { logoIonic } from 'ionicons/icons';
   templateUrl: './busca.page.html',
   styleUrls: ['./busca.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItemDivider, IonLabel, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonCardSubtitle, IonSearchbar, IonButton, IonIcon, RouterLink, IonSpinner, IonSkeletonText],
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonLabel, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonCardSubtitle, IonButton, IonIcon, RouterLink, IonSkeletonText],
 })
 export class BuscaPage implements OnInit {
   // SABER SE POSSO CRIAR O PRIVATE COM O NOME Q EU QUISER???
