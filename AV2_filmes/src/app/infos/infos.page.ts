@@ -4,13 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar, IonItemDivider, IonLabel, IonIcon } from '@ionic/angular/standalone';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { FilmesService } from '../services/filmes.service';
+import { ClassificacaoPipe } from '../pipes/classificacao-pipe';
 
 @Component({
   selector: 'app-infos',
   templateUrl: './infos.page.html',
   styleUrls: ['./infos.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItemDivider, IonLabel, RouterLink, IonIcon, DatePipe]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItemDivider, IonLabel, RouterLink, IonIcon, DatePipe, ClassificacaoPipe]
 })
 export class InfosPage implements OnInit {
 

@@ -28,9 +28,9 @@
             <div class="infos">
                 <span>Ano de lançamento: {{ anoLnc }}</span>
                 <span>Tipo: {{ tipo }}</span>
-                <span>Classificação: {{ rated }}</span>
+                <span>Classificação: {{ rated | classificacao }}</span>
                 <!-- PIPES PERSONALIZADAS
-                TRANSFORMAR CLASSIFICAÇÃO US PARA BR
+                TRANSFORMAR CLASSIFICAÇÃO US PARA BR: Feito
                 DIRETIVA PERSONALIZADA
                 MUDAR O FUNDO DA CLASSIFICAÇÃO PARA O CORRETO-->
                 <span>Gênero: {{ genero }}</span>
