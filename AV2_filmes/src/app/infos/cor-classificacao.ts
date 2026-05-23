@@ -48,5 +48,7 @@ this.elemento.nativeElement.style.backgroundColor = cor;
     this.elemento.nativeElement.style.padding = '4px 10px';
     this.elemento.nativeElement.style.fontWeight = 'bold';
     this.elemento.nativeElement.style.borderRadius = '6px';
+    this.elemento.nativeElement.style.width = '35px';
+  this.elemento.nativeElement.style.height = '35px';
 }
 }

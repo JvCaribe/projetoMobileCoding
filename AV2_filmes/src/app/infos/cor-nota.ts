@@ -38,8 +38,8 @@ export class CorNotaDiretiva implements OnChanges {
   this.elemento.nativeElement.style.display = 'inline-flex';
   this.elemento.nativeElement.style.alignItems = 'center';
   this.elemento.nativeElement.style.justifyContent = 'center';
-  this.elemento.nativeElement.style.width = '35px';
-  this.elemento.nativeElement.style.height = '35px';
+  this.elemento.nativeElement.style.width = '32px';
+  this.elemento.nativeElement.style.height = '32px';
   this.elemento.nativeElement.style.fontWeight = 'bold';
   this.elemento.nativeElement.style.borderRadius = '4px';
   }
