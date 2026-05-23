@@ -47,6 +47,7 @@ export class CorNotaDiretiva implements OnChanges {
   this.elemento.nativeElement.style.height = '32px';
   this.elemento.nativeElement.style.fontWeight = 'bold';
   this.elemento.nativeElement.style.borderRadius = '6px';
+   this.elemento.nativeElement.style.color = 'white';
   }
     }
   
