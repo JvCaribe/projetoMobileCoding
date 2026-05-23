@@ -32,6 +32,7 @@ export class CorClassificacaoDiretiva implements OnChanges {
     }
     else if (rated === 'R') {
       cor = '#D93025';
+      
     }
     else if (rated === 'NC-17' || rated === 'TV-MA') {
       cor = '#1A1A1A';
@@ -44,7 +45,7 @@ this.elemento.nativeElement.style.backgroundColor = cor;
     this.elemento.nativeElement.style.display = 'inline-flex';
     this.elemento.nativeElement.style.alignItems = 'center';
     this.elemento.nativeElement.style.justifyContent = 'center';
-    this.elemento.nativeElement.style.padding = '4px, 10px';
+    this.elemento.nativeElement.style.padding = '4px 10px';
     this.elemento.nativeElement.style.fontWeight = 'bold';
     this.elemento.nativeElement.style.borderRadius = '6px';
 }
