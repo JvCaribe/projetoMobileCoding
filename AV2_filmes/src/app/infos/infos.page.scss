@@ -43,7 +43,7 @@ ion-toolbar {
 .meio {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
     gap: 30px;
     border-radius: 12px;
@@ -81,18 +81,15 @@ ion-toolbar {
 }
 
 .poster {
-    flex: 0 250px;
+    // flex: 0 250px;
     display: inline-block;
     overflow: hidden;
-    border-radius: 8px;
-}
-
-.poster {
     width: 380px;
     height: 562px;
     border-radius: 8px;
     object-fit: cover;
     transition: transform 0.45s ease-in-out;
+    align-self: center;
 }
 
 .poster:hover {
