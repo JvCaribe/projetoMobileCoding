@@ -9,7 +9,7 @@ export class ClassificacaoPipe implements PipeTransform {
   transform(rated: string): string {
 
       if (rated === 'G') {
-        return 'Livre';
+        return 'L';
       }
 
       if (rated === 'PG') {
@@ -29,11 +29,11 @@ export class ClassificacaoPipe implements PipeTransform {
       }
 
       if(rated === 'TV-Y') {
-        return 'Livre';
+        return 'L';
       }
 
       if(rated === 'TV-G') {
-        return 'Livre';
+        return 'L';
       }
 
       if(rated === 'TV-Y7') {
