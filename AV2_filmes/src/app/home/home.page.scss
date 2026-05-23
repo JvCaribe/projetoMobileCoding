@@ -40,6 +40,7 @@ hr {
 }
 
 .cabecalho {
+  height: 15px;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -70,4 +71,10 @@ ion-icon {
   display:inline-block;
   align-items: center;
   justify-content: center;
+}
+
+ion-label {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
