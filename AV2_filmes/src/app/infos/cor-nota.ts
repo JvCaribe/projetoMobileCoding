@@ -34,7 +34,7 @@ export class CorNotaDiretiva implements OnChanges {
         }
 
         else if (nota >= 75 && nota <= 89) {
-            this.elemento.nativeElement.style.backgroundColor = 'green';
+            this.elemento.nativeElement.style.backgroundColor = '#72a341';
         }
         else if (nota >= 90 && nota <= 100) {
             this.elemento.nativeElement.style.backgroundColor = '#1B5E20';
