@@ -7,21 +7,9 @@
   transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
+#container strong { font-size: 20px; line-height: 26px; }
+#container p { font-size: 16px; line-height: 22px; color: #8c8c8c; margin: 0; }
+#container a { text-decoration: none; }
 
 ion-toolbar {
   --background: #464646;
@@ -33,6 +21,7 @@ ion-toolbar {
   align-items: center;
 }
 
+// ── Pesquisa ──────────────────────────────────
 .pesquisa {
   display: flex;
   justify-content: center;
@@ -52,11 +41,7 @@ ion-toolbar {
     transition: border-color 0.2s, background 0.2s;
 
     &::placeholder { color: rgba(255, 255, 255, 0.35); }
-
-    &:focus {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: rgba(255, 255, 255, 0.2);
-    }
+    &:focus { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.2); }
   }
 
   button {
@@ -70,13 +55,11 @@ ion-toolbar {
     cursor: pointer;
     transition: background 0.2s, color 0.2s;
 
-    &:hover {
-      background: rgba(255, 255, 255, 0.22);
-      color: #fff;
-    }
+    &:hover { background: rgba(255, 255, 255, 0.22); color: #fff; }
   }
 }
 
+// ── Grid de cards (busca) ─────────────────────
 .card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -113,17 +96,8 @@ ion-card-header {
   padding: 10px;
 }
 
-ion-card-title {
-  font-size: 17px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-ion-card-subtitle {
-  font-size: 14px;
-  color: #a0a0a0;
-  letter-spacing: 0.02em;
-}
+ion-card-title { font-size: 17px; font-weight: 600; margin-bottom: 5px; }
+ion-card-subtitle { font-size: 14px; color: #a0a0a0; letter-spacing: 0.02em; }
 
 hr {
   border: none;
@@ -152,7 +126,6 @@ a {
   text-decoration: none;
   color: #0bc9e2;
   transition: opacity 0.2s;
-
   &:hover { opacity: 0.75; }
 }
 
@@ -168,4 +141,128 @@ ion-label {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+}
+
+// ── HOME PAGE ─────────────────────────────────
+
+.home-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+// Banner de boas-vindas
+.banner {
+  text-align: center;
+  padding: 40px 20px 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 32px;
+
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #f0ede8;
+    margin: 0 0 12px;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #8c8a85;
+    margin: 0;
+  }
+}
+
+// Cards de informação
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+
+  .card {
+    display: block; // sobrescreve o grid da classe .card da busca
+    background: #1a1a22;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    padding: 20px 22px;
+    transition: border-color 0.25s, transform 0.25s;
+
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.18);
+      transform: translateY(-3px);
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #e0ddd8;
+      margin: 0 0 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    p, li {
+      font-size: 0.88rem;
+      color: #8c8a85;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 0;
+
+      li { margin-bottom: 4px; }
+    }
+  }
+}
+
+// Participação da equipe dentro do card
+.funcoes {
+  p {
+    margin: 0 0 12px;
+    &:last-child { margin-bottom: 0; }
+  }
+
+  strong {
+    color: #d0cdc8;
+    font-weight: 600;
+  }
+}
+
+// Tabela da equipe
+.footer {
+  h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e0ddd8;
+    margin: 0 0 16px;
+  }
+}
+
+#tabelamat {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.87rem;
+
+  th {
+    text-align: left;
+    padding: 10px 14px;
+    background: #1a1a22;
+    color: #a0a0a0;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  td {
+    padding: 10px 14px;
+    color: #8c8a85;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  tr:hover td { background: rgba(255, 255, 255, 0.03); }
+
+  a {
+    color: #0bc9e2;
+    font-size: 0.83rem;
+  }
 }
