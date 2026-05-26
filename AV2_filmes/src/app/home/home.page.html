@@ -19,63 +19,152 @@
 
 <ion-content [fullscreen]="true">
 
-  <h1>Bem-vindo à página inicial!</h1>
-  <h2> Fazer a introdução aqui, com nossos nomes, matriculas, link pro github de cada</h2>
-  <br>
-<h3>Falar sobre o que serão nossas duas páginas e quais os redirecionamentos. junto com que API usamos. <br> Fazer uma estilização legal</h3>
-  <h2>Baixa prioridade. Parte mais fácil do trabalho, fazer essa página por último</h2>
+  <div class="home-container">
 
+    <div class="banner">
+      <h1>Bem-vindo ao Buscador de Filmes</h1>
+      <p>
+        Projeto desenvolvido para a disciplina de Mobile Coding.
+      </p>
+    </div>
 
-  <br><br><br><br>
-  <hr>
-  <div class="container">
-    <h4>Observações</h4>
+    <div class="cards">
 
-    <p> Basicamente todos os componentes são puxados da API do ionic, então pra chamar eles vc tem q usar a tag
-      específica deles, q é o nome do componente entre chaves <strong>"ion-nomedocomponente"</strong> <br> E depois, o
-      mais <strong>IMPORTANTE</strong>, vc tem que adicionar a mesma tag no arquivo page.ts da página, no caso dessa
-      aqui é o home.page.ts. <br>
-      Aí você coloca no <strong>import do começo da página ts</strong> e depois nos imports do
-      <strong>@Components</strong>
-      <br> Mas creio que não será necessário adicionar mais componentes, a maioria já adicionei só é mais estilização
-      mesmo.
-    </p>
-    <p>Pra mudar o fundo tem q ir na tag ion-content, q é a MÃE de todas aqui, tudo tá dentro dela, é a primeira tag.
-      Apanhei bastante pra descobrir isso</p>
-    <br>
-    <ul>
-      <h2>Tarefas -</h2>
-      <li>
-        <p>Bom mudar esse fundo preto e estilizar bem, pode clicar na página 2 em amarelo que o fundo eu tava com a
-          ideia de ser daquela cor lá. Ele ta no infos.page.scss <br> Tarefa da estilização. </p>
-      </li>
-      <li>
+       
+      <div class="card">
+        <h2>Sobre o Projeto</h2>
+
         <p>
-          Ajeitar o logo do github lá em cima, ele tá empurrando todas as letras pra baixo na barra, tá feio. Tem que
-          ficar alinhado verticalmente os nomes em vermelho <br> Tarefa da estilização.
+          Nosso sistema funciona como um buscador de filmes,
+          permitindo pesquisar títulos e visualizar informações detalhadas.
         </p>
-      </li>
-      <li>
-        <p>
-          Ajeitar o card, tem que ficar bonitão, com titulo, genero e ano, tem que puxar os dados da API, o card é o
-          componente mais complexo, tem que ser o mais bonito também. <br> Tarefa do httpclient. Esqueleto tá pronto já.
-        </p>
-      </li>
-      <li>
-        <p> Tirar a barra cinza que sobra embaixo do card, ver se isso nao tem a ver com as coisas que escrevi, mas
-          mesmo sem elas ainda sobra a barra cinza <br> Tarefa da estilização.</p>
-      </li>
-      <li>
-        <p> Ajeitar o redirecionamento pra página 2, tem que ser clicando no título do card, e tem que puxar os dados do
-          filme específico pra lá, ou seja, quando <br> clicar no título do card, tem que puxar os dados daquele filme
-          específico pra página 2. <br> Tarefa do httpclient também.
-        </p>
-      </li>
-      <li>Como dito, <strong>a página 2 escrita em amarelo no menu em cima não irá existir, ela é feita pra gente
-          navegar facilmente pelas páginas do codigo</strong></li>
-    </ul>
+
+        <ul>
+          <li>Página de busca de filmes</li>
+          <li>Página de detalhes do filme</li>
+          <li>Navegação entre páginas usando rotas</li>
+          <li>Integração com API utilizando método GET</li>
+        </ul>
+      </div>
+
+      
+      <div class="card">
+        <h2>Tecnologias Utilizadas</h2>
+
+        <ul>
+          <li>Angular + Ionic</li>
+          <li>TypeScript</li>
+          <li>SCSS</li>
+          <li>HTTPClient</li>
+          <li>API de Filmes</li>
+          <li>Pipes personalizados</li>
+        </ul>
+      </div>
+
+      
+      <div class="card">
+        <h2>Participação da Equipe</h2>
+
+        <div class="funcoes">
+
+          <p>
+            <strong>Ana Anete</strong><br>
+            Diretiva personalizada e estruturais
+          </p>
+
+          <p>
+            <strong>João Victhor Caribé</strong><br>
+            Integração com API utilizando GET
+          </p>
+
+          <p>
+            <strong>Danilo Lopes</strong> e
+            <strong>João Vitor Vieira</strong><br>
+            HTTPClient e Service
+          </p>
+
+          <p>
+            <strong>João Lucas</strong><br>
+            Pipes personalizados e built-in
+          </p>
+
+          <p>
+            <strong>Todos</strong><br>
+            Rotas e passagem de parâmetros
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div class="footer">
+
+      <h2>Equipe do Projeto</h2>
+
+      <table id="tabelamat">
+
+        <tr>
+          <th>Aluno</th>
+          <th>Matrícula</th>
+          <th>GitHub</th>
+        </tr>
+
+        <tr>
+          <td>Ana Anete Higino de V. Pereira</td>
+          <td>01816489</td>
+          <td>
+            <a href="https://github.com/AnaAnet3" target="_blank">
+              Github
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Danilo Lopes Cavalcanti</td>
+          <td>01793099</td>
+          <td>
+            <a href="https://github.com/danilolopescavalcanti" target="_blank">
+              Github
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>João Victhor Pereira Caribé de Carvalho</td>
+          <td>01799125</td>
+          <td>
+            <a href="https://github.com/JvCaribe" target="_blank">
+              Github
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>João Vitor Vieira Souto</td>
+          <td>01795946</td>
+          <td>
+            <a href="https://github.com/joaovitorvieira729-netizen" target="_blank">
+              Github
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>João Lucas Araújo de Almeida</td>
+          <td>01793571</td>
+          <td>
+            <a href="https://github.com/JLucas1127" target="_blank">
+              Github
+            </a>
+          </td>
+        </tr>
+
+      </table>
+
+    </div>
+
   </div>
-
-  <br>
 
 </ion-content>
