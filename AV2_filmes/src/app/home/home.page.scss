@@ -7,10 +7,6 @@
   transform: translateY(-50%);
 }
 
-#container strong { font-size: 20px; line-height: 26px; }
-#container p { font-size: 16px; line-height: 22px; color: #8c8c8c; margin: 0; }
-#container a { text-decoration: none; }
-
 ion-toolbar {
   --background: #464646;
   --color: #e2dfdf;
@@ -19,90 +15,6 @@ ion-toolbar {
   height: 60px;
   justify-content: center;
   align-items: center;
-}
-
-// ── Pesquisa ──────────────────────────────────
-.pesquisa {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 36px;
-
-  input {
-    width: 400px;
-    height: 46px;
-    padding: 0 16px;
-    border-radius: 8px 0 0 8px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-right: none;
-    background: rgba(255, 255, 255, 0.06);
-    color: #fff;
-    font-size: 15px;
-    outline: none;
-    transition: border-color 0.2s, background 0.2s;
-
-    &::placeholder { color: rgba(255, 255, 255, 0.35); }
-    &:focus { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.2); }
-  }
-
-  button {
-    height: 46px;
-    padding: 0 22px;
-    border-radius: 0 8px 8px 0;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    background: rgba(255, 255, 255, 0.12);
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 15px;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s;
-
-    &:hover { background: rgba(255, 255, 255, 0.22); color: #fff; }
-  }
-}
-
-// ── Grid de cards (busca) ─────────────────────
-.card {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-  padding: 10px;
-}
-
-ion-card {
-  border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-  padding: 10px;
-  text-align: center;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
-  }
-}
-
-#card-image {
-  width: 300px;
-  height: 444px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
-
-ion-card-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
-
-ion-card-title { font-size: 17px; font-weight: 600; margin-bottom: 5px; }
-ion-card-subtitle { font-size: 14px; color: #a0a0a0; letter-spacing: 0.02em; }
-
-hr {
-  border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin: 8px 0;
 }
 
 .cabecalho {
@@ -117,7 +29,7 @@ hr {
 #labelred {
   text-decoration: none;
   padding: 10px;
-  color: #c0392b;
+  color: #cacaca;
   font-size: 1.2em;
   font-weight: bold;
 }
@@ -131,10 +43,12 @@ a {
 
 ion-icon {
   position: relative;
-  top: 6px;
-  font-size: 30px;
-  color: #c0392b;
+  top: 8px;
+  font-size: 32px;
+  color: #cacaca;
   display: inline-block;
+  align-items: center;
+  justify-content: center;
 }
 
 ion-label {
@@ -143,7 +57,7 @@ ion-label {
   margin-bottom: 10px;
 }
 
-// ── HOME PAGE ─────────────────────────────────
+
 
 .home-container {
   max-width: 900px;
@@ -180,7 +94,7 @@ ion-label {
   margin-bottom: 40px;
 
   .card {
-    display: block; // sobrescreve o grid da classe .card da busca
+    display: block; 
     background: #1a1a22;
     border: 1px solid rgba(255, 255, 255, 0.07);
     border-radius: 10px;
@@ -216,7 +130,7 @@ ion-label {
   }
 }
 
-// Participação da equipe dentro do card
+// Tabela da equipe
 .funcoes {
   p {
     margin: 0 0 12px;
@@ -229,7 +143,6 @@ ion-label {
   }
 }
 
-// Tabela da equipe
 .footer {
   h2 {
     font-size: 1rem;
