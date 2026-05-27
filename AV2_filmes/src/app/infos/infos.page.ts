@@ -95,6 +95,7 @@ export class InfosPage implements OnInit {
       this.tipo = dados.Type || 'N/A';
     }
     this
+    
 
     if (dados.Type === 'series') {
       this.duracao = `${dados.Runtime} por episódio, em média`
