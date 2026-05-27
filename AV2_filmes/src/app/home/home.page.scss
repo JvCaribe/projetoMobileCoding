@@ -1,6 +1,5 @@
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
@@ -8,28 +7,18 @@
   transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
-
-hr {
-  color: #fcfbfb;
-  border: 1px solid #fcfbfb;
+ion-toolbar {
+  --background: #464646;
+  --color: #e2dfdf;
+  --border-radius: 0px 0px 12px 12px;
+  --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  height: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 .cabecalho {
+  height: 15px;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -40,28 +29,153 @@ hr {
 #labelred {
   text-decoration: none;
   padding: 10px;
-  color: #a70909;
+  color: #cacaca;
   font-size: 1.2em;
   font-weight: bold;
-  
 }
 
-a{
+a {
   text-decoration: none;
   color: #0bc9e2;
+  transition: opacity 0.2s;
+  &:hover { opacity: 0.75; }
 }
 
-
-// ajeitar o icon pra nao empurrar o texto pra baixo, e centralizar ele com o texto
 ion-icon {
   position: relative;
   top: 8px;
   font-size: 32px;
-  color: #a70909;
-  margin-top:1px;
-  display:inline-block;
-  // align-items: center;
-  // justify-content: center;
-  // align-items: center;
-  // text-decoration: none;
+  color: #cacaca;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+ion-label {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+
+.home-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+// Banner de boas-vindas
+.banner {
+  text-align: center;
+  padding: 40px 20px 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 32px;
+
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #f0ede8;
+    margin: 0 0 12px;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #8c8a85;
+    margin: 0;
+  }
+}
+
+// Cards de informação
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+
+  .card {
+    display: block; 
+    background: #1a1a22;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 10px;
+    padding: 20px 22px;
+    transition: border-color 0.25s, transform 0.25s;
+
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.18);
+      transform: translateY(-3px);
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #e0ddd8;
+      margin: 0 0 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    p, li {
+      font-size: 0.88rem;
+      color: #8c8a85;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 0;
+
+      li { margin-bottom: 4px; }
+    }
+  }
+}
+
+// Tabela da equipe
+.funcoes {
+  p {
+    margin: 0 0 12px;
+    &:last-child { margin-bottom: 0; }
+  }
+
+  strong {
+    color: #d0cdc8;
+    font-weight: 600;
+  }
+}
+
+.footer {
+  h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e0ddd8;
+    margin: 0 0 16px;
+  }
+}
+
+#tabelamat {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.87rem;
+
+  th {
+    text-align: left;
+    padding: 10px 14px;
+    background: #1a1a22;
+    color: #a0a0a0;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  td {
+    padding: 10px 14px;
+    color: #8c8a85;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  tr:hover td { background: rgba(255, 255, 255, 0.03); }
+
+  a {
+    color: #0bc9e2;
+    font-size: 0.83rem;
+  }
 }

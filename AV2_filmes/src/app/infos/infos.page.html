@@ -1,111 +1,110 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <div class="cabecalho">
-      <ion-title>
-        Detalhes do Filme
-      </ion-title>
-      <ion-label>
-        <a routerLink="/home" id="labelred">Home</a>
-        <a routerLink="/busca" id="labelred">Busca</a>
-        <a routerLink="/infos" id="labelred">Página 2</a>
-        <a href="https://github.com/JvCaribe/projetoMobileCoding" target="_blank" id="labelred">GitHub</a>
-      </ion-label>
-    </div>
-  </ion-toolbar>
+    <ion-toolbar>
+        <div class="cabecalho">
+            <ion-title>
+                Detalhes
+            </ion-title>
+
+            <ion-label>
+                <a routerLink="/home" id="labelred">Home</a>
+                <a routerLink="/busca" id="labelred">Busca</a>
+                <a href="https://github.com/JvCaribe/projetoMobileCoding" target="_blank" id="labelred">GitHub</a>
+            </ion-label>
+        </div>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
-  <div class="pesquisa">
-    <input type="text" id="titulo" placeholder="Digite o nome do filme" />
-    <button onclick="buscarFilme()">Buscar</button>
-  </div>
-
-  <div class="meio">
+    <div class="meio">
 
         <div>
-            <img class="poster" src="" alt="poster">
+            <img class="poster" [src]="poster" alt="poster">
         </div>
 
         <div class="detalhes">
-            <div class="title"></div>
+
+            <div class="title">{{ title }}</div>
+
             <div class="infos">
-                <span id="anoLnc">Ano de lançamento</span>
-                <span id="tipo">Tipo</span>
-                <span id="rated">Classificação</span>
-                <span id="genero">Gênero</span>
+                <span>Ano de lançamento: {{ anoLnc }}</span>
+                <span>Tipo: {{ tipo }}</span>
+                <span id="classif">Classificação: <span [appCorClassificacao]="rated">{{ rated | classificacao }}</span> </span>
+                <!-- 
+                PIPES PERSONALIZADAS
+                TRANSFORMAR CLASSIFICAÇÃO US PARA BR: Feito
+                DIRETIVA PERSONALIZADA
+                MUDAR O FUNDO DA CLASSIFICAÇÃO PARA A COR CERTA: Feito
+                -->
+                <span id="genero">Gênero: {{ genero }}</span>
             </div>
 
             <div class="informacoes">
                 <span id="textoavaliacao">
-                    <a>
-                        <img id="metascore" src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Metascore.png"
-                            alt="MetaScore logo" title="metascore">
-                        <a id="metascoreRating"></a>
-                    </a>
+                    <img id="metascore" src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Metascore.png"
+                        alt="MetaScore logo">
+                    <span id="metascoreRating" [appCorNota]="metascoreRating">{{ metascoreRating }}</span>
+                </span>
+                <!-- DIRETIVA PERSONALIZADA 
+                 MUDAR O FUNDO DA NOTA METASCORE: Feito -->
+
+                <span id="textoavaliacao">
+                    <img id="rottentomatoes"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/3840px-Rotten_Tomatoes.svg.png"
+                        alt="Rotten Tomatoes logo">
+                    <span id="rottenRating">{{ rottenRating }}</span>
                 </span>
 
                 <span id="textoavaliacao">
-                    <a>
-                        <img id="rottentomatoes"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/3840px-Rotten_Tomatoes.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
-                            alt="Rotten Tomatoes logo" title="Rotten Tomatoes">
-                        <a id="rottenRating"></a>
-                    </a>
-                </span>
-
-                <span id="textoavaliacao">
-                    <a>
-                        <img id="imdb"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1280px-IMDB_Logo_2016.svg.png"
-                            alt="IMDb logo" title="IMDb">
-                        <a id="imdbRating"></a>
-                    </a>
+                    <img id="imdb"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1280px-IMDB_Logo_2016.svg.png"
+                        alt="IMDb logo">
+                    <span id="imdbRating">{{ imdbRating }}</span>
                 </span>
 
                 <span>
-                    <a id="linkImdb" href="" target="_blank">
+                    <a id="linkImdb" [href]="linkImdb" target="_blank">
                         Ver página no IMDb
                     </a>
                 </span>
+
             </div>
-            <br>
-            <div class="sinopse">
-                <a id="plot"></a>
-            </div>
-            <br>
+
+
+            <p class="sinopse">
+                {{ plot }}
+            </p>
+
             <div class="diretor">
-                <span>
-                    <img id="oscar" src="https://cdn-icons-png.flaticon.com/512/2589/2589426.png" alt="camera">
-                    Duração: <a id="duracao"></a>
-                </span>
-                <br> <br>
-                <span>
-                    <img id="oscar" src="https://cdn-icons-png.flaticon.com/512/412/412810.png" alt="Logo Diretor"
-                        title="Diretor">
-                    Diretor(a):
-                    <a id="direcao"></a>
-                </span>
-                <br> <br>
-                <span>
-                    <img id="oscar" src="https://cdn-icons-png.flaticon.com/512/33/33308.png" alt="Logo Elenco"
-                        title="Elenco">
-                    Elenco:
-                    <a id="elenco"></a>
-                </span>
+                <p>
+                    <img id="oscar" src="https://cdn-icons-png.flaticon.com/512/2589/2589426.png">
+                    Duração: <span>{{ duracao }}</span>
+                </p>
+
+                <p>
+                    <img id="oscar" src="https://cdn-icons-png.flaticon.com/512/412/412810.png">
+                    <span>{{ direcao }}</span>
+                </p>
+
+                <p>
+                    <img id="oscar" src="https://cdn-icons-png.flaticon.com/512/33/33308.png">
+                    Elenco: <span>{{ elenco }}</span>
+                </p>
             </div>
+
             <br>
+
             <div class="premios">
-                <span>
-                    <a>
-                        <img id="oscar" src="https://scroar.net/wp-content/uploads/2023/03/Oscars-675x900.png"
-                            alt="Oscars logo" title="metascore">
-                        Premiações:
-                        <a id="premios"></a>
-                    </a>
-                </span>
+                <p>
+                    <img id="oscar" src="https://scroar.net/wp-content/uploads/2023/03/Oscars-675x900.png">
+                    Premiações: <span>{{ premios }}</span>
+                </p>
             </div>
+
         </div>
+
+    </div>
+    <div class="meio-data">
+        <p class="dtBusca">Data da busca: {{ dataReq | date: 'dd/MM/yyyy'}}, às {{ dataReq | date: 'HH:mm' }}.</p>
     </div>
 
 </ion-content>

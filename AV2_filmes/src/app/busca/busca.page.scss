@@ -26,71 +26,102 @@
   text-decoration: none;
 }
 
+ion-toolbar {
+  --background: #464646;
+  --color: #e2dfdf;
+  --border-radius: 0px 0px 12px 12px;
+  --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-label {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
 .pesquisa {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px;
-    }
-    .pesquisa input {
-        width: 400px;
-        height: 50px;
-        padding: 10px;
-        border-radius: 8px 0 0 8px;
-        border: none;
-        font-size: 15px;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-    }
-    .pesquisa button {
-        padding: 10px 20px;
-        border-radius: 0 8px 8px 0;
-        border: none;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);  
-        /* background-color: #576ff8; */
-        background-color: rgb(75, 74, 73);
-        color: white;
-        font-size: 16px;
-        cursor: pointer;
-    }
-    .pesquisa button:hover {
-        background-color:white;
-        color: rgb(75, 74, 73);
-    }
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 55px;
 
+}
 
-
-.card {
-  // width: 300px;
-  // margin: 10px auto;
-  // display: inline-block;
-  // position: relative;
-  // padding: 12px 18px;
-  // border-radius: 14px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
+.pesquisa input {
+  width: 410px;
+  height: 65px;
   padding: 10px;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  font-size: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.pesquisa button {
+  padding: 10px 20px;
+  border-radius: 0 8px 8px 0;
+  border: none;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  /* background-color: #576ff8; */
+  background-color: rgb(75, 74, 73);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pesquisa button:hover {
+  background-color: white;
+  color: rgb(75, 74, 73);
+}
+
+
+
+.card-filmes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 5px;
+  padding-left: 40px;
+
 }
 
 ion-card {
-  // width: 350px;
-  // margin: 10px auto;
-  // position: relative;
-  // display: inline-block;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
   padding: 10px;
   text-align: center;
+  max-width: 350px;
 }
 
 #card-image {
-//   // width: 100%;
-//   // height: auto;
-//   // border-radius: 8px;
-  width: 300px;
-  height: 444px;
+  width: 320px;
+  height: 485px;
+  // width: 100%;
+  // height: 80%;
+  object-fit: cover;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#imgNf {
+  width: 150px;
+  height: 222px;
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 10px;
+}
+
+ion-skeleton-text {
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
 }
 
 // 100% e 80% de w/h ficou legal.
@@ -109,12 +140,8 @@ ion-card-header {
 }
 
 ion-card-title {
-  // font-size: 1.5em;
-  // font-weight: bold;
-  // padding-top: 0px;
-  // margin-left: 0px;
-font-size: 18px;
-margin-bottom: 5px;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
 ion-card-subtitle {
@@ -128,6 +155,7 @@ hr {
 }
 
 .cabecalho {
+  height: 15px;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -138,28 +166,22 @@ hr {
 #labelred {
   text-decoration: none;
   padding: 10px;
-  color: #a70909;
+  color: #cacaca;
   font-size: 1.2em;
   font-weight: bold;
-  
 }
 
-a{
+a {
   text-decoration: none;
   color: #0bc9e2;
 }
 
-
-// ajeitar o icon pra nao empurrar o texto pra baixo, e centralizar ele com o texto
 ion-icon {
   position: relative;
   top: 8px;
   font-size: 32px;
-  color: #a70909;
-  margin-top:1px;
-  display:inline-block;
-  // align-items: center;
-  // justify-content: center;
-  // align-items: center;
-  // text-decoration: none;
+  color: #cacaca;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
 }
