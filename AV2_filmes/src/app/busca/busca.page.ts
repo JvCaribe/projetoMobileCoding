@@ -19,7 +19,7 @@ import { logoIonic } from 'ionicons/icons';
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonLabel, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonCardSubtitle, IonButton, IonIcon, RouterLink, IonSkeletonText],
 })
 export class BuscaPage implements OnInit {
-  // SABER SE POSSO CRIAR O PRIVATE COM O NOME Q EU QUISER???
+  
   constructor(private filmesService: FilmesService) { }
 
   filmes: any[] = [];
